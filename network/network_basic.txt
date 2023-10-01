@@ -1,8 +1,0 @@
-1.smtp and email protocols 
-2.tlds
-3.data and servers 
-4.http and https and ports 
-5.browser request levels
-6.cdn and how its works and levels 
-7.how to connect hosts to domains on windows os
-8.free ssl certificate
