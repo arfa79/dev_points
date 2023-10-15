@@ -1,0 +1,28 @@
+installing docker guide https://phoenixnap.com/kb/install-docker-on-ubuntu-20-04
+sudo systemctl status docker
+sudo systemctl reboot docker
+sudo apt update
+sudo apt-get install -y links
+sudo apt-get install kubectl
+sudo apt-get install minikube '''minikube for installing pakages'''
+minikube start  '''you can run this without any other comand and its install nessary packages'''
+minikube start --vm-driver=links '''docker by default'''
+sudo groupadd docker '''ading docker to group for using '''
+sudo usermod -aG docker alireza
+newgrp docker
+docker run hello-world 
+kubectl get nodes 
+minikube status
+kubectl version
+kubectl create deployment nginx-deployment --image=nginx
+kubectl get pod
+kubectl create deployment wordpress --image=wordpress
+kubectl get replicaset
+kubectl create deployment phpmyadmin --image=phpmyadmin
+kubectl edit deployment nginx-deployment
+kubectl logs wordpress
+kubctl describe ''' more info '''
+kubectl exec -it nginx-deployment-66fb7f764c-g7zph -- bin/bash '''for having a command line and run command in pod  '''
+kubectl delete deployment wordpress
+kubectl apply -f mysql-secret.yaml (shecan for proxy and reboot)
+nano mysql-secret.yaml
