@@ -1,3 +1,4 @@
+===================== create and manage =========================
 installing docker guide https://phoenixnap.com/kb/install-docker-on-ubuntu-20-04
 sudo systemctl status docker
 sudo systemctl reboot docker
@@ -15,7 +16,7 @@ kubectl get nodes
 minikube status
 kubectl version
 kubectl create deployment nginx-deployment --image=nginx
-kubectl get pod
+kubectl get pod (--watch)
 kubectl create deployment wordpress --image=wordpress
 kubectl get replicaset
 kubectl create deployment phpmyadmin --image=phpmyadmin
@@ -25,4 +26,14 @@ kubctl describe ''' more info '''
 kubectl exec -it nginx-deployment-66fb7f764c-g7zph -- bin/bash '''for having a command line and run command in pod  '''
 kubectl delete deployment wordpress
 kubectl apply -f mysql-secret.yaml (shecan for proxy and reboot)
-nano mysql-secret.yaml
+nano mysql-secret.yaml (for solving mysql pod problem please look at https://kubernetes.io/docs/tasks/run-application/run-single-instance-stateful-application/)
+============================ components =================================
+kubectl get service
+kubectl get deployment mysql -o yaml
+kubectl get deployment mysql -o yaml > mysql-result.yaml (saving result in yaml file)
+ubectl delete -f mysql.yaml
+============================ conecting to database =======================
+kubectl get all
+kubectl get secret (key is diffrent than of value and its the first part )
+
+
