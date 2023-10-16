@@ -1,0 +1,4 @@
+installation guaide >> https://argo-cd.readthedocs.io/en/stable/getting_started/
+kubectl get pod -n argocd
+kubectl get svc -n argocd
+kubectl port-forward -n argocd svc/argo-server 
