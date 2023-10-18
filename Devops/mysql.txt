@@ -1,0 +1,14 @@
+https://kubernetes.io/docs/tasks/run-application/run-single-instance-stateful-application/
+mysql -u root -p >>>> the root password is password 
+kubectl get deployment <mysql-deployment-name> -o json
+kubectl exec -it <mysql-pod-name> -- /bin/bash
+CREATE DATABASE <your_database>;
+CREATE USER '<your_user>'@'%' IDENTIFIED BY '<your_password>';
+GRANT ALL PRIVILEGES ON <your_database>.* TO '<your_user>'@'%';
+FLUSH PRIVILEGES;
+SHOW DATABASES;
+USE your_database_name;
+CREATE TABLE test_table (id INT PRIMARY KEY, name VARCHAR(255));
+SHOW TABLES;
+INSERT INTO test_table (id, name) VALUES (1, 'John');
+SELECT * FROM test_table;

@@ -35,5 +35,14 @@ ubectl delete -f mysql.yaml
 ============================ conecting to database =======================
 kubectl get all
 kubectl get secret (key is diffrent than of value and its the first part )
-
-
+for external service weshould add an yamal file or at the end of main another file the configuration with --- and notice the nodeport must be 30000 to 32767 and type loadbalancer and nodeport is seprate
+minikube service phpmyadmin
+============================ namespaces ==================================
+kubectl get namespaces
+kubectl get configmap -n default
+sudo snap install kubectx --classic
+kubens argocd
+kubectl get all -n default
+kubectl get ingress -n default
+kubectl delete ing wordpress-ingress
+kubectl describe ingress phpmyadmin-ingress -n default

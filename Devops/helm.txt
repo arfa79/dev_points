@@ -1,0 +1,5 @@
+helm hub >>>>> https://artifacthub.io/
+helm create my-wordpress
+helm list
+helm delete my-wordpress
+ls -ltra

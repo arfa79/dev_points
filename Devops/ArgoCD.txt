@@ -1,7 +1,7 @@
 installation guaide >> https://argo-cd.readthedocs.io/en/stable/getting_started/
 kubectl get pod -n argocd
 kubectl get svc -n argocd
-kubectl port-forward -n argocd svc/argocd-server 8080 (settings : developer setting for git authentication token)
+kubectl port-forward -n argocd svc/argocd-server 8080 
 https://docs.github.com/en/enterprise-server@3.6/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
 kubectl apply -f application.yaml 
 for converting vps localhost to pc https://serverfault.com/questions/1077702/how-to-forward-my-localhost-to-my-vpss-ip-address
