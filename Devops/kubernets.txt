@@ -46,3 +46,4 @@ kubectl get all -n default
 kubectl get ingress -n default
 kubectl delete ing wordpress-ingress
 kubectl describe ingress phpmyadmin-ingress -n default
+minikube addons enable ingress >> for empty ADDRESS feeilds of ingress
