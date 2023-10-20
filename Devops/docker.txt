@@ -1,0 +1,7 @@
+docker ps -a 
+sudo docker run --name nc -p 80:80 nextcloud  
+docker rm dfc9 dfc7  
+docker start arfa2 
+docker info
+docker pull nextcloud  
+for pull docker without vpn docker mirror >> https://registery.dockeria.ir/

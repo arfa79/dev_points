@@ -1,2 +1,4 @@
 (settings : developer setting for git authentication token)
 git add -u -u
+git clone --depth 1 (for last files and faster)
+dif checker
