@@ -1,1 +1,3 @@
 ip route get 1.2.3.4 | awk '{print $7}' #finding the ip address in fastest way
+for deleteing the specific parts of history file in zsh shell 
+we can run nano .zsh_history to modify that 
